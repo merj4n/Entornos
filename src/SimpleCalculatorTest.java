@@ -18,5 +18,6 @@ public class SimpleCalculatorTest {
         float actual;
         actual = this.calculator.subtract(n1, n2);
         assertEquals(expected, actual, 0.000);
+
     }
 }
