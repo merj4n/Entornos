@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 
 public class SimpleCalculatorTestDivide {
 
+
     private SimpleCalculator calculator;
     @Test
     public void divide() {
