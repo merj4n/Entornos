@@ -11,6 +11,7 @@ public class SimpleCalculator {
     public float add(float n1, float n2) {
         return n1 + n2;
     }
+
     /**
      * n1 - n2.
      *
@@ -21,6 +22,7 @@ public class SimpleCalculator {
     public float subtract(float n1, float n2) {
         return n1 - n2;
     }
+
     /**
      * n1 * n2.
      *
@@ -31,6 +33,7 @@ public class SimpleCalculator {
     public float multiply(float n1, float n2) {
         return n1 * n2;
     }
+
     /**
      * n1 / n2.
      *
@@ -40,9 +43,17 @@ public class SimpleCalculator {
      * @throws ArithmeticException If the divisor is 0.
      */
     public float divide(float n1, float n2) throws ArithmeticException {
-        if ((int)n2 == 0) {
+        if ((int) n2 == 0) {
             throw new ArithmeticException("Cannot divide by zero.");
         }
         return n1 / n2;
+    }
+
+    public boolean isEvenNumber(int number) {
+        boolean result = false;
+        if (number % 2 == 0) {
+            result = true;
+        }
+        return result;
     }
 }

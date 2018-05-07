@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Employee {
     private String name;
     private int empId;
@@ -16,6 +19,15 @@ public class Employee {
             status = true;
         }
         return status;
+    }
+
+    public String getPropValue(final String key){
+        Map appProps = new HashMap();
+        appProps.put("key1", "engreido");
+        appProps.put("key2", "humilde");
+        appProps.put("key3", "honesto");
+        appProps.put("key4", "humilde");
+        return (String) appProps.get(key);
     }
 
     public static String getEmpNameWithHighestSalary() {
