@@ -1,8 +1,4 @@
-import com.JUnit.intellij.test.SimpleCalculator;
-import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SimpleCalculatorTestDivide2 {
 

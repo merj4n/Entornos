@@ -1,5 +1,3 @@
-package com.JUnit.intellij.test;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,14 +20,14 @@ public class SimpleCalculatorTestEjercicio6 {
 
             retorno=this.calculator.povOf2(enteros[i]);
             String valor=""+(int)Math.pow(2,enteros[i]);
-            Assert.assertEquals("Es lo esperado",valor,retorno);
+            assertEquals("Es lo esperado",valor,retorno);
             System.out.println("Potencia en base 2 de "+enteros[i]+" = "+valor);
 
         }
         System.out.println("Todos correctos vamos a por el 100");
 
         int cien= Integer.parseInt(this.calculator.povOf2(100));
-        Assert.assertTrue("cierto",(int)Math.pow(2,100)==cien);
+        assertTrue("cierto",(int)Math.pow(2,100)==cien);
 
     }
 
