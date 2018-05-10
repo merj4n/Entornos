@@ -5,9 +5,11 @@ import java.util.regex.Pattern;
 
     public class Patrones {
         public static void main(String[] args) {
+
             String input = args[0];
             List<String> output = captureItemsBetweenDashes(input);
             System.out.println(output);
+
         }
         static List<String> captureItemsBetweenDashes(String input) {
             List<String> captured = new ArrayList<String>();

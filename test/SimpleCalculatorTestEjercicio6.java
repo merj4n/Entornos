@@ -26,8 +26,7 @@ public class SimpleCalculatorTestEjercicio6 {
         }
         System.out.println("Todos correctos vamos a por el 100");
 
-        int cien= Integer.parseInt(this.calculator.povOf2(100));
-        assertTrue("cierto",(int)Math.pow(2,100)==cien);
+        assertEquals("1267650600228229401496703205376",calculator.povOf2(100));
 
     }
 
